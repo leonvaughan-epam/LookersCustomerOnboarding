@@ -5,8 +5,8 @@
 
     <script>
         const appName = 'c:CustomerOnboardingWrapper';
-        const componentName = 'c:customerOnboardingComponent';
-        const lightningEndpoint = 'https://lookersmotorgroup--poc.sandbox.my.salesforce.com';
+        const componentName = 'c:customerOnboardingAuraComponent';
+        const lightningEndpoint = 'https://lookersmotorgroup--poc.sandbox.my.salesforce.com/';
         const targetElement = document.querySelector("[data-lightning-out]");
         const componentAttributes = {
 
@@ -18,7 +18,7 @@
                 $Lightning.createComponent(
                     componentName,
                     componentAttributes,
-                    targetElement,
+                    "container",
                     function (cmp){
                         console.log('lightning component created');
                     }

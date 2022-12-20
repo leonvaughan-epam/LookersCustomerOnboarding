@@ -1,8 +1,12 @@
 <html>
     
+    <body onload="init()">
+        <div id='container'>
+        </div>
+    
     <div id='container'></div>
-    <script type='text/javascript' src="https://lookersmotorgroup--poc.sandbox.my.salesforce.com/lightning/lightning.out.js"></script>
-    <script type='text/javascript'>
+    <script src="https://lookersmotorgroup--poc.sandbox.my.salesforce.com/lightning/lightning.out.js"></script>
+    <script 
     function init(){
         $Lightning.use("c:customerOnboardingWrapper",    // name of the Lightning app
             function() {                  // Callback once framework and app loaded
@@ -18,4 +22,6 @@
         );
         }
     </script>
+    
+    </body>
 </html>

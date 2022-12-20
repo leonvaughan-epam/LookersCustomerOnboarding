@@ -1,27 +1,25 @@
 <html>
     
     <body onload="init()">
-        <div id='container'>
-        </div>
+        <div id='container'></div>
     
-    <div id='container'></div>
-    <script src="https://lookersmotorgroup--poc.sandbox.my.salesforce.com/lightning/lightning.out.js"></script>
-    <script 
-    function init(){
-        $Lightning.use("c:customerOnboardingWrapper",    // name of the Lightning app
-            function() {                  // Callback once framework and app loaded
-                $Lightning.createComponent(
-                    "c:customerOnboardingAuraComponent", // top-level component of your app
-                    { },                  // attributes to set on the component when created
-                    "container",   // the DOM location to insert the component
-                    function(cmp) { // callback when component is created and active on the page
-                    }
-                );
-            },
-            'https://lookersmotorgroup--poc.sandbox.my.salesforce.com'  // Experience Cloud site endpoint
-        );
-        }
-    </script>
+        <script src="https://lookersmotorgroup--poc.sandbox.my.salesforce.com/lightning/lightning.out.js"></script>
+        <script 
+        function init(){
+            $Lightning.use("c:customerOnboardingWrapper",    // name of the Lightning app
+                function() {                  // Callback once framework and app loaded
+                    $Lightning.createComponent(
+                        "c:customerOnboardingAuraComponent", // top-level component of your app
+                        { },                  // attributes to set on the component when created
+                        "container",   // the DOM location to insert the component
+                        function(cmp) { // callback when component is created and active on the page
+                        }
+                    );
+                },
+                'https://lookersmotorgroup--poc.sandbox.my.salesforce.com'  // Experience Cloud site endpoint
+            );
+            }
+        </script>
     
     </body>
 </html>

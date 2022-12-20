@@ -3,9 +3,9 @@
     <body>
         <div id='container'></div>
     
-        <script type="text/javascript" src="https://lookersmotorgroup--poc.sandbox.my.salesforce.com/lightning/lightning.out.js"></script>
+        <script type="text/javascript" src="https://lookersmotorgroup--poc.sandbox.my.site.com/CustomerOnboarding/lightning/lightning.out.js"></script>
         <script type="text/javascript" 
-        function init(){
+        
             $Lightning.use("c:customerOnboardingWrapper",    // name of the Lightning app
                 function() {                  // Callback once framework and app loaded
                     $Lightning.createComponent(
@@ -16,9 +16,9 @@
                         }
                     );
                 },
-                'https://lookersmotorgroup--poc.sandbox.my.salesforce.com'  // Experience Cloud site endpoint
+                'https://lookersmotorgroup--poc.sandbox.my.site.com/CustomerOnboarding'  // Experience Cloud site endpoint
             );
-            }
+        
         </script>
     
     </body>
